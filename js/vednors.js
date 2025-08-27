@@ -34,7 +34,3 @@ let endorrl  = new vendor("https://upload.wikimedia.org/wikipedia/commons/thumb/
 endorrl.displayIt()
 
 
-
-myKitchen.showKitchen();
-
-myKitchen.showList();
