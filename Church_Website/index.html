@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/index.css">
+<script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script defer src="firebase.js"></script>
+    <script defer src="Home.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="./imgs/logo.jpg" alt="" loading="lazy" id="logo"></a>
+        <img src="./imgs/menu.jpeg"  alt="Menu" loading="lazy" id="menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./htmls/vendors.html">Vendors</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="mainText">
+            <h1>WELCOME To V.M&ST.G FESTIVAL</h1>
+            <h3>A Festival Made by everyone for everyone</h3>
+               
+                    <a href="https://www.facebook.com/p/Virgin-Mary-Saint-George-Church-in-Staten-Island-100064817133705/"><img src="./imgs/youtube.png" alt="" class="mainpic"></a>
+                    <a href="https://www.youtube.com/@virginmaryandstgeorge"><img src="./imgs/facebook.png" alt="" class="mainpic"></a>
+                
+                <a href="Vendors.html" id="mainbt">🤩See What is There🤩</a>
+        </div>
+        <img src="./imgs/cross.png" alt="" loading="lazy" id="mainImg">
+    </main>
+    <div id="aboutUS">
+        <h1>About The Festival</h1>
+        <div id="AboutUsItems">
+            <img src="./imgs/mainImage.png" loading="lazy">
+            <div id="AboutUsText">
+                <h1>The Festival</h1>
+                <p>
+                    The Festival, where Everyone is welcome to the festival, is made to Celebrate The coptic Heritage and to let everyone enjoy and celeberrate together.
+                    <h2>Dates : September 13,14,20 and 21.</h2> <br><h2>After The liturgey from 11am to 6pm</h2>
+                     
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="location">
+        <h1>Location</h1>
+        <div id="locationItems">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1351.2338112669058!2d-74.2493682301781!3d40.510267509883185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ca9c0bd80331%3A0x9a9accf9e296f45a!2sVirgin%20Mary%20%26%20St%20George%20Coptic%20Orthodox%20Church!5e0!3m2!1sen!2sus!4v1756044904629!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="locationText">
+            <h1>Where is The Festival ?</h1>
+            <p> The Festival is located at 190 Main St, Staten Island, NY 10307 near Cracker Barrel Deli
+ </p>
+       
+            <a href="https://maps.app.goo.gl/nsmLepWz1NMwpyDq5" target="_blank">📍Click Here for directions📍</a>
+         </div>
+
+
+        </div>
+        
+    </div>
+    <div id="Feedback">
+        <h1>Your Feedback</h1>
+        <div id="Feedbackitems">
+
+        
+            <div id="donation">
+                <h1>Donation:</h1>
+                <h3>You can use Zelle to Donate Online :</h3>
+              
+                <img src="./imgs/Donation.png" alt="">
+            </div>
+            <div id="FeedbackField">
+                            <p>We Care about Your opinion to improve our Festival</p>
+                <label for="">Name :</label>
+                <input type="text" placeholder="Name" id="name">
+                <label for="">Email :</label>
+                <input type="text" placeholder="Email" id="email">
+                <label for="">Your Message :</label>
+                <textarea name="" id="textarea" placeholder="Your Message..." >
+                </textarea>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+       <h1> © Virgin Mary & ST.Geroge 2025</h1>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
