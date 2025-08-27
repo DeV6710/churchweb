@@ -34,54 +34,6 @@ let endorrl  = new vendor("https://upload.wikimedia.org/wikipedia/commons/thumb/
 endorrl.displayIt()
 
 
-class Kitchen extends vendor{
-    constructor(img,name,tag,about,list){
-        super(img,name,tag,about)
-        this.list = list
-    }
-
-
-
-    showKitchen(){
-         return kitchenId.innerHTML +=`
-        <div class="vendor">
-            <img src=${this.img} loading="lazy" class="imgs">
-            <p class = "vendorTag">Vendor</p>
-            <h1 class="title">${this.name}</h1>
-            <h3 class="tag">${this.tag}</h3>
-            <p class="about" >${this.about}</p>
-            <ul id="listoflists">
-                
-            </ul>
-        </div>
-        `
-        
-    }
-    showList(){
-        let objy = {}
-        let ul = document.getElementById("listoflists")
-        for(let e of this.list){
-            objy.e = this.list[e]
-            let li = document.createElement("li")
-            li.innerText = `${e} : ${objy[e]}`
-            ul.appendChild(li)
-        }
-        
-    }
-}
-
-
-const myKitchen = new Kitchen(
-    "https://via.placeholder.com/150",
-    "Mario's Kitchen",
-    "Italian Cuisine",
-    "Best pasta and pizza in town!",
-    {
-        "Pizza": "$10",
-        "Pasta": "$8",
-        "Salad": "$5"
-    }
-);
 
 myKitchen.showKitchen();
 
